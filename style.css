@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: lightblue;
+}
+.main{
+    background: teal;
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.game-details{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.board{
+    background: darkcyan;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template : repeat(30 , 1fr) / repeat(30 , 1fr) ;
+}
+.board .food{
+    background: #FF003D;
+}
+.board .snake{
+    background: white;
+}
